@@ -1,0 +1,23 @@
+[class^='icon-']:before,
+[class*=' icon-']:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 1em;
+  height: 1em;
+  margin: auto;
+  font-family: $icons_font;
+  line-height: 1em;
+  text-align: center;
+}
+
+// TODO: add icons here -------------------------------
+
+.icon-search:before { content: '\e800'; } /* '' */
+.icon-facebook:before { content: '\f052'; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
+.icon-whatsapp:before { content: '\f232'; } /* '' */

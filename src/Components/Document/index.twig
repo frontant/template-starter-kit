@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="icon" href="images/logo.png" sizes="128x128" />
+	{% for src in env.styles %}
+		<link rel="stylesheet" href="{{ src }}">
+	{% endfor %}
+</head>
+<body>
+	{% block content %}{% endblock %}
+	{% for src in env.scripts %}
+		<script src="{{ src }}"></script>
+	{% endfor %}
+</body>
+</html>

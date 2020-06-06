@@ -1,0 +1,14 @@
+/* normalize */
+@import 'normalize.css/normalize';
+
+/* variables, maps, mixins */
+@import './shared/styles/variables/**';
+@import './shared/styles/mixins/**';
+
+/* base */
+@import './shared/styles/fonts';
+@import './shared/styles/icons';
+@import './shared/styles/base';
+
+/* components */
+@import './Components/*/_style.scss';

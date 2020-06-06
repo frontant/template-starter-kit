@@ -1,0 +1,44 @@
+[is='component-navigationbar'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+  align-items: center;
+  width: 100%;
+  padding: 10px 36px;
+  background-color: rgba($c_blue_10, 0.75);
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.1rem;
+  }
+
+  .logo img {
+    height: 2.5em;
+  }
+
+  ul {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    color: $c_white;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    li {
+      margin-right: 2.4em;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

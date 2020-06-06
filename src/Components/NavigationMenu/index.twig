@@ -1,0 +1,9 @@
+<nav is="component-navigationmenu">
+  <div class="bar">
+    <a class="logo" href="#">
+      <img src="images/logo.png" alt="logo">
+    </a>
+    {% include './Partials/hamburger.twig' %}
+  </div>
+  {% include './Partials/menu.twig' with { items: navItems } %}
+</nav>

@@ -1,0 +1,10 @@
+<nav is="component-navigationbar">
+  <a class="logo" href="#">
+    <img src="images/logo.png" alt="logo">
+  </a>
+  <ul>
+    {% for item in navItems %}
+      <li><a href="{{item.link}}">{{item.caption}}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

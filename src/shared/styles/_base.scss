@@ -11,7 +11,7 @@ body {
 }
 
 a {
-  color: $color_link;
+  color: $c_blue_100;
 }
 
 ul {
@@ -20,5 +20,46 @@ ul {
   list-style-type: none;
 }
 
+ul.text-list,
+ul.text-list ul {
+  padding-left: 2em;
+  list-style-type: disc;
+}
+
+ol {
+  padding-left: 2em;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  box-sizing: content-box;
+  line-height: 1.15;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--default {
+    min-width: 120px;
+    padding: 8px 28px;
+    color: $c_black;
+    font-weight: 700;
+    font-size: 0.9em;
+    white-space: nowrap;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $c-white;
+    border: 1px solid $c_black;
+
+    @include media-breakpoint-up(md) {
+      padding: 12px 30px;
+      font-size: 1em;
+    }
+  }
+}
 
 // TODO: add more styles -------------------------------

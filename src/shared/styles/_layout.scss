@@ -1,0 +1,18 @@
+.container,
+.container-fluid {
+  position: relative;
+  padding: 0 20px;
+
+  @include media-breakpoint-up(sm) {
+    padding: 0 30px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 0 60px;
+  }
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}

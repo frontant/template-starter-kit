@@ -1,9 +1,32 @@
+{% set data = {
+  navItems: [
+    {
+      caption: 'home',
+      link: '#'
+    },
+    {
+      caption: 'Product',
+      link: '#'
+    },
+    {
+      caption: 'About',
+      link: '#'
+    }
+  ]
+} %}
+
 {% extends 'Components/Document/index.twig' %}
 
 {% block title %}Hello World{% endblock %}
 
 {% block content %}
 
+{% include 'Components/NavigationBar/index.twig' with {
+  navItems: data.navItems
+} %}
+{% include 'Components/NavigationMenu/index.twig' with {
+  navItems: data.navItems
+} %}
 {% include 'Components/Contact/index.twig' %}
 
 {% endblock %}

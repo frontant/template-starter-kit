@@ -1,0 +1,13 @@
+@mixin media-breakpoint-up($name, $hiDpi: false) {
+  $min-width: map-get($breakpoint, $name);
+
+  @if $hiDpi {
+    @media screen and (min-width: #{$min-width}) and (min-resolution: 96dpi) {
+      @content;
+    }  
+  } @else {
+    @media screen and (min-width: #{$min-width}) {
+      @content;
+    }  
+  }
+}

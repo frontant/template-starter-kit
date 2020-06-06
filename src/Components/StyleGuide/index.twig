@@ -1,0 +1,79 @@
+{% set data = {
+  colors: [
+    '#fff',
+    '#111',
+    '#0082c3',
+    '#e5f2f9'
+  ],
+}%}
+
+<div class="container" is="component-styleguide">
+  <section class="colors">
+    <h2>Colors</h2>
+    <ul>
+      {% for color in data.colors %}
+        <li>
+          <div class="color" style="background-color:{{color}}"></div>
+          <div class="title">{{color}}</div>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section>
+    <h2>Headings</h2>
+    <div>
+      <h1>h1 Example heading</h1>
+      <h2>h2 Example heading</h2>
+      <h3>h3 Example heading</h3>
+      <h4>h4 Example heading</h4>
+      <h5>h5 Example heading</h5>
+    </div>
+  </section>
+
+  <section>
+    <h2>Text</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit beatae, laboriosam nemo exercitationem magni cupiditate rem voluptatibus modi laborum nulla ullam quidem quas mollitia ipsum expedita, soluta dolor, vitae optio?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur <a href="#">example link</a>. Fugit nemo exercitationem magni cupiditate <a href="#">example link</a> rem voluptatibus modi laborum nulla ullam quidem quas mollitia ipsum expedita, soluta dolor, vitae optio?</p>
+  </section>
+
+  <section>
+    <h2>Lists</h2>
+    <h3>Unordered List</h3>
+    <ul class="text-list">
+      <li>list item</li>
+      <li>list item
+          <ul>
+              <li>Nested item</li>
+              <li>Nested item</li>
+              <li>Nested item</li>
+          </ul>
+      </li>
+      <li>list item</li>
+      <li>list item</li>
+      <li>list item</li>
+    </ul>
+    <h3>Ordered List</h3>
+    <ol>
+      <li>list item</li>
+      <li>list item
+          <ol>
+              <li>Nested item</li>
+              <li>Nested item</li>
+              <li>Nested item</li>
+          </ol>
+      </li>
+      <li>list item</li>
+      <li>list item</li>
+      <li>list item</li>
+    </ol>
+  </section>
+  
+  <section class="buttons">
+    <h2>Buttons</h2>
+    <ul>
+      <li><button type="button" class="btn btn--default">Ok</button></li>
+      <li><button type="button" class="btn btn--default">Extra wide button</button></li>
+    </ul>
+  </section>
+</div>

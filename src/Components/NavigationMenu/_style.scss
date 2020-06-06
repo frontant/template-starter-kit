@@ -1,0 +1,37 @@
+[is='component-navigationmenu'] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease-out;
+
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+
+  .bar {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 36px;
+    background-color: $c_blue_10;
+    box-shadow: 0 8px 12px -12px desaturate(darken($c_blue_10, 20%), 40%);
+  }
+
+  .logo img {
+    height: 36px;
+  }
+
+  &.menuIsOpen {
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  @import 'Partials/hamburger';
+  @import 'Partials/menu';
+}

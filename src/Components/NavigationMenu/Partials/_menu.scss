@@ -1,0 +1,28 @@
+.menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  color: $c_white;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $c_blue_10;
+  transform: translateY(-100%);
+  transition: transform ease-out 0.25s;
+
+  li {
+    margin: 15px 20px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+&.menuIsOpen .menu {
+  transform: translateY(0);
+}
+

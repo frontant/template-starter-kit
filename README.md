@@ -10,7 +10,7 @@ template starter kit, html-template, template, boilerplate, template builder, co
     <p> Build html templates with component based setup.</p>
 </div>
 
-![resume](editor-screenshot.png)
+![editor screenshot](editor-screenshot.png)
 
 ## Projects based on Template Starter Kit
 

@@ -18,16 +18,14 @@ template starter kit, html-template, template, boilerplate, template builder, co
 | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | <a href="https://github.com/frontant/delicious-sushi-template/">delicious sushi</a> | <a href="https://frontant.github.io/demo-sites/delicious-sushi-template/">showcase</a> |
 
-## Quick start
-
-The project uses <a href="https://gulpjs.com/">gulp</a> as a build tool. Please install <b>gulp</b> first.
+## How to run the development environment
 
 ```bash
-# set up the environment
+# prepare the environment
 npm i
 
-# run it
-gulp watch
+# run the development mode
+npm run watch
 
 # open 'http://localhost:3000' and start developing
 ```
@@ -36,7 +34,7 @@ gulp watch
 
 ```bash
 # build
-gulp
+npm run build
 ```
 
 ## Branches

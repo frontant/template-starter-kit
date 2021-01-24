@@ -25,18 +25,9 @@
 
   @if $gutterWidth {
     column-gap: $gutterWidth;
+    row-gap: $gutterWidth;
   } @else {
     column-gap: $grid_gutter_width;
-  }
-}
-
-@mixin grid-col-2($col-1, $col-2, $gutterWidth: false) {
-  display: grid;
-  grid-template-columns: $col-1 $col-2;
-
-  @if $gutterWidth {
-    column-gap: $gutterWidth;
-  } @else {
-    column-gap: $grid_gutter_width;
+    row-gap: $grid_gutter_width;
   }
 }

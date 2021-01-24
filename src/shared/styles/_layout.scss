@@ -16,3 +16,37 @@
   max-width: 960px;
   margin: 0 auto;
 }
+
+.grid {
+  @include grid(1);
+}
+
+.grid--col-2 {
+  @include media-breakpoint-up(sm) {
+    @include grid(2);
+  }
+}
+
+.grid--col-3 {
+  @include media-breakpoint-up(sm) {
+    @include grid(2);
+  }
+
+  @include media-breakpoint-up(md) {
+    @include grid(3);
+  }
+}
+
+.grid--col-4 {
+  @include media-breakpoint-up(sm) {
+    @include grid(2);
+  }
+
+  @include media-breakpoint-up(md) {
+    @include grid(3);
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include grid(4);
+  }
+}
